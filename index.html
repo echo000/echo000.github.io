@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Summoners For League by echo000</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">League Summoners</h1>
+      <h2 class="project-tagline">Made by echo000 - Cameron Finn</h2>
+    </section>
+
+    <section class="main-content">
+
+<h3>
+<a id="About" class="anchor" href="#About" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h3>
+
+<p><b>League Summoners</b> is an all purpose application for all League of Legends players needs.
+</p>
+<h3>
+<a id="Features" class="anchor" href="#Features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
+It allows users to search for players across all regions, look through their previous games, at their current game and at all their statistics.<br>
+It also allows you to look at all the champion data - Lore, ally and enemy tips, abilities - with videos, as well as the skins for each character.</p>
+
+      <h3>
+<a id="Image" class="anchor" href="#Images" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h3>
+<img id = "myImg" src="Images/Img1.png" alt="Match History" style="width:180px;height:320px" onclick="showModal(this);">
+<img id = "myImg" src="Images/Img2.png" alt="Current Game" style="width:180px;height:320px" onclick="showModal(this);">
+<img id = "myImg" src="Images/Img3.png" alt="Statistics" style="width:180px;height:320px" onclick="showModal(this);">
+<img id = "myImg" src="Images/Img4.png" alt="Adding a Favorite" style="width:180px;height:320px" onclick="showModal(this);">
+
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+function showModal(img1){
+var img = img1;
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImg.src = img1.src;
+    captionText.innerHTML = img1.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+<h3>
+<a id="Link" class="anchor" href="#Link" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h3>
+
+<a href="https://itunes.apple.com/gb/app/league-summoners/id1329939152?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+
+<h3>
+<a id="Legal" class="anchor" href="#Legal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Legal Information</h3>
+
+<p><b>League Summoners</b> isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</p>
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">© 2017 Cameron Finn. <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+
+  </body>
+</html>
